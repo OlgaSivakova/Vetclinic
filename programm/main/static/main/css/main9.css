@@ -1,0 +1,12 @@
+.col { font-size: 50px;
+    text-align: center; background: url("women.gif"); height: 1020px; } 
+    .txt h1{font-size: 60px; color: rgb(161, 241, 247);}
+    .txt p{font-size: 40px;color:antiquewhite}
+    .txt p, h1 {text-align: center;}
+    .txt button {margin-left: 70px;}
+.png_clock img{width: 78px;
+    height: 78px;
+    margin-left: -310px;
+    margin-top: 6px;}
+.png_clock h6 {margin-top: -69px;
+    text-align: center; color:white;}

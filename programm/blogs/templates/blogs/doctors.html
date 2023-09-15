@@ -1,0 +1,35 @@
+{%extends 'main/layout.html'%}
+{%load static%}
+
+        {%block title%}Наши врачи {%endblock%}
+  
+      
+    {%block content%}
+
+        <h1 class="display-1" style='font-size: 50px; text-align: center;'>Наши врачи</h1>
+        <section class='png_doc'>
+            <img src="{% static 'main/img/doctor-bulk-billing-doctors-chapel-hill-health-care-medical-3.png'%}">
+        </section>
+       
+        {%for i in doctors%}
+       <div class="all", style='overflow:hidden; transform:0.5s; margin-left:800px;'>
+       
+            <section class="image">
+                <img src="{{i.image.url}}"/><br>
+                
+                <br>
+            
+            
+                <h3 class='name'>  {{i.name}}</h3>
+                <h3 class='surname'>  {{i.surname}}</h3>
+                <h4 class='con'> {{i.content}}</h4>
+                <h6 class='exp'> {{i.exp}}</h6>
+                
+                
+            
+        </section>
+        </div>
+     
+        {%endfor%}
+
+    {%endblock%}
